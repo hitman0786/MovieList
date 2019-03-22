@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white_color"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:id="@+id/posterIV"/>
+        <TextView
+                android:text="Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium"
+                android:id="@+id/titleTV"/>
+
+        <TextView
+                android:text="Director : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/directorTV"
+                android:text="Director names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Writer : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/writerTV"
+                android:text="Writer names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Actors : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/actorsTV"
+                android:text="Actors name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Plot : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/plotTV"
+                android:text="Plot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Language : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/languageTV"
+                android:text="Language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Country : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/countryTV"
+                android:text="Country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+
+        <TextView
+                android:text="Genre : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/genreTV"
+                android:text="Genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Released : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/releasedTV"
+                android:text="Released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Runtime : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/runtimeTV"
+                android:text="Runtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+        <TextView
+                android:text="Awards : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black_color"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/black_color"/>
+
+        <TextView
+                android:id="@+id/awardsTV"
+                android:text="Awards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_smaller"
+                android:textColor="@color/black_color"/>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
