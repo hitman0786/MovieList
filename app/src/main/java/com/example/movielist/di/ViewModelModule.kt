@@ -1,9 +1,9 @@
 package com.example.movielist.di
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import dagger.multibindings.IntoMap
 import dagger.Binds
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProvider
 import com.example.movielist.di.factory.ViewModelFactory
 import com.example.movielist.ui.home.HomeViewModel
 import dagger.Module

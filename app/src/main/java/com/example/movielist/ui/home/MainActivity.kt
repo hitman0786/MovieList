@@ -1,10 +1,10 @@
 package com.example.movielist.ui.home
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.view.View
 import com.example.movielist.R
@@ -30,17 +30,17 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         //add adapter to recyclerview
-        listRV.layoutManager = LinearLayoutManager(this)
+        /*listRV.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         movieAdapter = MovieAdapter()
-        listRV.adapter = movieAdapter
+        listRV.adapter = movieAdapter*/
 
         //Call viewmodel to access data from data source
-        observeData()
+        /*observeData()
         observeProgress()
-        observeError()
+        observeError()*/
     }
 
-    //check for any errors
+    /*//check for any errors
     private fun observeError() {
         mViewModel.getErrors().observe(this, Observer {
             it?.let {
@@ -67,6 +67,6 @@ class MainActivity : BaseActivity() {
             }
         })
     }
-
+*/
     private fun Boolean?.getVisibility(): Int = if (this != null && this) View.VISIBLE else View.GONE
 }

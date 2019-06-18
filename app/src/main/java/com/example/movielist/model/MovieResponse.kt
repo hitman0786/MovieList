@@ -1,14 +1,18 @@
 package com.example.movielist.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 import java.io.Serializable
 
 /**
  * Current Movie Response class
  */
 
-data class MovieResponse(@SerializedName("movies") val movies:Array<Movie>): Serializable
+@Parcelize
+data class MovieResponse(@SerializedName("movies") val movies:Array<Movie>): Parcelable
 
+@Parcelize
 data class Movie(
     @SerializedName("Title") val title:String,
     @SerializedName("Year") val year:String,
@@ -25,4 +29,4 @@ data class Movie(
     @SerializedName("Awards") val awards:String,
     @SerializedName(value = "Poster ", alternate = ["Poster"]) val poster: String?
 
-): Serializable
+): Parcelable

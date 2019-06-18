@@ -1,7 +1,7 @@
 package com.example.movielist.repository
 
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import android.util.Log
 import com.example.movielist.base.BaseActivity
 import com.example.movielist.model.MovieResponse

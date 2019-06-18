@@ -8,7 +8,7 @@ import android.graphics.drawable.ColorDrawable
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.provider.Settings
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.Window
 import android.widget.TextView
 import com.example.movielist.R
