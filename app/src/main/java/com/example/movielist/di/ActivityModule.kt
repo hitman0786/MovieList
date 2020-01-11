@@ -1,5 +1,6 @@
 package com.example.movielist.di
 
+import com.example.movielist.base.BaseActivity
 import com.example.movielist.ui.home.MainActivity
 import com.example.movielist.ui.details.DetailsActivity
 import com.example.movielist.ui.home.HomeActivity
@@ -15,6 +16,8 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class ActivityModule {
 
+    @ContributesAndroidInjector
+    abstract fun baseActivity(): BaseActivity
     @ContributesAndroidInjector
     abstract fun splashActivity(): SplashActivity
     @ContributesAndroidInjector

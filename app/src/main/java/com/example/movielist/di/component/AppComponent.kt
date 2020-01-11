@@ -8,6 +8,7 @@ import com.example.movielist.di.NetworkModule
 import com.example.movielist.di.ViewModelModule
 import dagger.BindsInstance
 import dagger.Component
+import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
@@ -17,18 +18,9 @@ import javax.inject.Singleton
     FrgamentModule::class,
     AndroidSupportInjectionModule::class])
 @Singleton
-interface AppComponent {
+interface AppComponent : AndroidInjector<MovieApplication>{
 
+    @Component.Factory
+    abstract class Factory : AndroidInjector.Factory<MovieApplication>
 
-    @Component.Builder
-    interface Builder {
-
-        @BindsInstance
-        fun application(application: Application): Builder
-
-        fun build(): AppComponent
-    }
-
-
-    fun inject(appController: MovieApplication)
 }

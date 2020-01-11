@@ -15,7 +15,7 @@ class SplashActivity: BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AndroidInjection.inject(this)
+        //AndroidInjection.inject(this)
         setContentView(R.layout.activity_spalsh)
 
         Handler().postDelayed(

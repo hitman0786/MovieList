@@ -13,12 +13,13 @@ import android.view.Window
 import android.widget.TextView
 import com.example.movielist.R
 import com.example.movielist.utlis.ConnectivityReceiver
+import dagger.android.support.DaggerAppCompatActivity
 
 /**
  * Base class for all activity classes
  * we can add some activity specific code here
  */
-open class BaseActivity: AppCompatActivity(), ConnectivityReceiver.ConnectivityReceiverListener {
+open class BaseActivity: DaggerAppCompatActivity(), ConnectivityReceiver.ConnectivityReceiverListener {
 
     var connectivityReceiver: ConnectivityReceiver? = null
 

@@ -9,23 +9,18 @@
               android:name="com.example.movielist.ui.home.fragment.SplashFragment"
               android:label="fragment_splash"
               tools:layout="@layout/fragment_splash">
+
         <action android:id="@+id/action_splashFragment_to_homeFragment"
                 app:destination="@id/homeFragment"/>
     </fragment>
     <fragment android:id="@+id/homeFragment"
               android:name="com.example.movielist.ui.home.fragment.HomeFragment"
               android:label="fragment_home"
-    >
+              tools:layout="@layout/fragment_home">
+
         <action android:id="@+id/action_homeFragment_to_detailsFragment"
-                app:destination="@id/detailsFragment"
-                app:enterAnim="@anim/nav_default_enter_anim"
-                app:exitAnim="@anim/nav_default_exit_anim"
-                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-                app:popExitAnim="@anim/nav_default_pop_exit_anim"
-                app:popUpTo="@+id/homeFragment">
+                app:destination="@id/detailsFragment"/>
 
-
-        </action>
     </fragment>
     <fragment android:id="@+id/detailsFragment"
               android:name="com.example.movielist.ui.home.fragment.DetailsFragment"

@@ -26,7 +26,7 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AndroidInjection.inject(this)
+        //AndroidInjection.inject(this)
         setContentView(R.layout.activity_main)
 
         //add adapter to recyclerview

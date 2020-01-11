@@ -1,5 +1,12 @@
 package com.example.movielist.di
 
+import android.app.Application
+import android.graphics.drawable.Drawable
+import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestManager
+import com.bumptech.glide.request.RequestOptions
+import com.example.movielist.R
 import com.example.movielist.remote.ApiService
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
@@ -25,6 +32,27 @@ class NetworkModule {
     companion object {
 
     }
+
+    @Singleton
+    @Provides
+    internal fun provideRequestOptions(): RequestOptions {
+        return RequestOptions.placeholderOf(R.drawable.icon)
+            .error(R.drawable.icon)
+    }
+    @Singleton
+    @Provides
+    internal fun provideGlideInstance(
+        application: Application,
+        requestOptions: RequestOptions
+    ): RequestManager {
+        return Glide.with(application).setDefaultRequestOptions(requestOptions)
+    }
+    @Singleton
+    @Provides
+    internal fun provideAppDrawable(application: Application): Drawable? {
+        return ContextCompat.getDrawable(application, R.drawable.icon)
+    }
+
     @Provides
     @Reusable
     internal fun providePostApi(retrofit: Retrofit): ApiService {
